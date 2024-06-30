@@ -1,9 +1,3 @@
 [user]
 	name = gasidev
 	email = 78299174+gasidev@users.noreply.github.com
-[init]
-	defaultBranch = main
-[color]
-	ui = auto
-[core]
-	editor = code --wait

@@ -1,9 +1,9 @@
 vim.cmd("let g:netrw_liststyle = 3")
-local opt = vim.opt -- for conciseness
 
--- line numbers
-opt.relativenumber = true -- show relative line numbers
-opt.number = true -- shows absolute line number on cursor line (when relative number is on)
+local opt = vim.opt
+
+opt.relativenumber = true
+opt.number = true
 
 -- tabs & indentation
 opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
@@ -12,7 +12,7 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = false
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -41,3 +41,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
+vim.g.python3_host_prog = vim.fn.expand("~/.venvs/neovim/bin/python")
